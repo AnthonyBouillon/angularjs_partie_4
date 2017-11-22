@@ -5,9 +5,9 @@
         </head>
 
         <body ng-app>
-            <button ng-init="number = 0" ng-click="number = number -1">-</button>
-            <button ng-init="number = 0" ng-click="number = number +1">+</button>
-            <p>Appuie sur - ou + et regarde ce que sa fait : {{number}}</p>
+            <button ng-click="number = number -1">-</button>
+            <button ng-click="number = number +1">+</button>
+            <p ng-init="number = 0">Appuie sur - ou + et regarde ce que sa fait : {{number}}</p>
 
             <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         </body>
