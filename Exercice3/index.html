@@ -6,14 +6,14 @@
     <title>Exercice3</title>
   </head>
   <body ng-app='myApp' ng-controller="customersCtrl">
-      <div ng-repeat="x in myData | filter : 'verte'"> 
+      <div ng-repeat="x in myData | filter : 'verte'">
       <p>{{x.marque}} {{x.couleur}}</p>
       </div>
 
     <script>
       var app = angular.module('myApp',[]);
       app.controller('customersCtrl',function($scope,$http){
-        $http.get("voiture.json").then(function(response){
+        $http.get('voiture.json').then(function(response){
           $scope.myData = response.data;
         });
       });
